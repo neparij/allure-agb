@@ -1,0 +1,19 @@
+.idea/
+.qt/
+.qtc_clangd/
+.cache/
+*.iws
+build/
+.idea_modules/
+.DS_Store
+*.gba
+*.elf
+*.sav
+*.ss*
+*.bk
+compile_commands.json
+
+# Allure Related Files
+.allure/
+allure-report/
+allure-results/
