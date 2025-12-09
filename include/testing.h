@@ -14,7 +14,7 @@ namespace testing {
     extern int failed_tests;
 }
 
-#define KS_ASSERT(condition, ...) \
+#define TEST_ASSERT(condition, ...) \
     do { \
         testing::step(#condition __VA_OPT__(, ) __VA_ARGS__); \
         if(! (condition)) [[unlikely]] { \

@@ -35,7 +35,7 @@ namespace testing::allure {
 
     void init();
 
-    void push_command(const command_t command);
+    void push_command(command_t command);
 
     void start_suite(const bn::string_view &suite_name);
 
