@@ -8,6 +8,16 @@ Allure-AGB is a mini test-framework that runs Game Boy Advance (GBA) ROMs under 
 
 ---
 
+## Disclaimer
+
+This project is in **Work In Progress** state. The current implementation supports only a limited set of Allure features and is intended for demonstration purposes only.
+
+Note that this repository is an experimental proof of concept and is not intended for production use. It demonstrates the feasibility of integrating **Allure reporting** with GBA development using **mGBA**'s Lua scripting capabilities.
+
+This project is not affiliated with or endorsed by the Qameta Software or its maintainers.
+
+---
+
 ## Supported Platforms
 
 - Butano v18.0.0+
