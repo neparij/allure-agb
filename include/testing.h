@@ -24,7 +24,6 @@ namespace testing {
     } while(false)
 
 namespace testing {
-    static char message_buffer[GBA_TESTING_SUITE_ASSERT_BUFFER_SIZE] = "";
     static bn::string_view current_suite = "";
     static bn::string_view current_case = "";
 
@@ -46,6 +45,8 @@ namespace testing {
 
     template<typename ... Args>
     void step(const char *condition_msg, const Args &...args) {
+        // Stack, not IWRAM BSS: this is only live during a TEST_ASSERT.
+        char message_buffer[GBA_TESTING_SUITE_ASSERT_BUFFER_SIZE];
         message_buffer[0] = '\0';
         bn::istring_base istring(message_buffer);
         bn::ostringstream string_stream(istring);
